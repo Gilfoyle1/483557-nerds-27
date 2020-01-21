@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Евгений Костомаров](https://up.htmlacademy.ru/htmlcss/27/user/483557).
-* Наставник: `Неизвестно`.
+- Студент: [Евгений Костомаров](https://up.htmlacademy.ru/htmlcss/27/user/483557).
+- Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
