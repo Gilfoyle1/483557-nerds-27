@@ -2,11 +2,11 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="дизайн-студия из Краснодара" />
-  <meta name="keywords" content="дизайн, веб-сайты, приложения" />
+  <meta charset="utf-8"/>
+  <meta name="description" content="дизайн-студия из Краснодара"/>
+  <meta name="keywords" content="дизайн, веб-сайты, приложения"/>
   <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="#" />
+  <link rel="stylesheet" href="#"/>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
   <header class="header">
     <nav class="header-nav">
       <a class="header-logo">
-        <img src="https://via.placeholder.com/150x100" alt="логотип" width="" height="" />
+        <img src="https://via.placeholder.com/150x100" alt="логотип" width="" height=""/>
       </a>
       <ul class="nav-list">
         <li><a href="#">студия</a></li>
@@ -22,9 +22,9 @@
         <li><a href="catalog.html">магазин</a></li>
         <li><a href="#">контакты</a></li>
       </ul>
-      <ul class="nav-basket">
-        <li><a href="#">корзина</a></li>
-      </ul>
+      <span class="nav-basket">
+        <a href="#">корзина</a>
+      </span>
     </nav>
   </header>
   <!--основной раздел-->
@@ -72,19 +72,19 @@
     <section class="directions">
       <h2 class="visually-hidden">Напрвления</h2>
       <div class="directions-blog">
-        <img src="https://via.placeholder.com/150x100" alt="" width="" height="" />
+        <img src="https://via.placeholder.com/150x100" alt="" width="" height=""/>
         <h3>Веб-сайты</h3>
         <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
         <a href="#">Заказать</a>
       </div>
       <div class="directions-blog">
-        <img src="https://via.placeholder.com/150x100" alt="" width="" height="" />
+        <img src="https://via.placeholder.com/150x100" alt="" width="" height=""/>
         <h3>Приложения</h3>
         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
         <a href="#">Заказать</a>
       </div>
       <div class="directions-blog">
-        <img src="https://via.placeholder.com/150x100" alt="" width="" height="" />
+        <img src="https://via.placeholder.com/150x100" alt="" width="" height=""/>
         <h3>Презентации</h3>
         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
         <a href="#">Заказать</a>
@@ -107,18 +107,20 @@
         </ul>
       </div>
       <div class="statistics">
-        <img src="https://via.placeholder.com/150x100" alt="" width="" height />
+        <img src="https://via.placeholder.com/150x100" alt="" width="" height/>
         <p>с 2004 года Любим точность во всем:</p>
-        <ul class="statistics-list">
-          <li>146<sup>%</sup></li>
-          <li>100<sup>%</sup></li>
-          <li>50<sup>%</sup></li>
-        </ul>
-        <ul class="features-list">
-          <li>Уровень самоотдачи</li>
-          <li>Соблюдение сроков</li>
-          <li>Минимальная предоплата</li>
-        </ul>
+        <table class="statistics-table">
+          <tr>
+            <td>146<sup>%</sup/td>
+            <td>100<sup>%</sup</td>
+            <td>50<sup>%</sup</td>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
       </div>
     </section>
     <!--блок клиентов-->
@@ -127,19 +129,19 @@
       <ul class="customers-list">
         <li>
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/150x100"
-              alt="html academy" width="" height="" /></a>
+              alt="html academy" width="" height=""/></a>
         </li>
         <li>
           <a href="#">
-            <img src="https://via.placeholder.com/150x100" alt="Барбершоп Бородинский" width="" height="" /></a>
+            <img src="https://via.placeholder.com/150x100" alt="Барбершоп Бородинский" width="" height=""/></a>
         </li>
         <li>
           <a href="#">
-            <img src="https://via.placeholder.com/150x100" alt="Приложение Pink" width="" height="" /></a>
+            <img src="https://via.placeholder.com/150x100" alt="Приложение Pink" width="" height=""/></a>
         </li>
         <li>
           <a href="#">
-            <img src="https://via.placeholder.com/150x100" alt="Интернет магазин mishka" width="" height="" /></a>
+            <img src="https://via.placeholder.com/150x100" alt="Интернет магазин mishka" width="" height=""/></a>
         </li>
       </ul>
     </section>
@@ -178,15 +180,15 @@
       <form class="feedback-form" action="" method="post">
         <div>
           <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" required placeholder="Представьтесь, пожалуйста" />
+          <input type="text" name="name" id="name" required placeholder="Представьтесь, пожалуйста"/>
         </div>
         <div>
           <label for="mail">Ваш e-mail:</label>
-          <input type="email" name="mail" id="mail" required placeholder="Для отправки ответа" />
+          <input type="email" name="mail" id="mail" required placeholder="Для отправки ответа"/>
         </div>
         <div>
           <label for="text">Текст письма:</label>
-          <input type="text" name="text" id="text" required placeholder="В свободной форме" />
+          <input type="text" name="text" id="text" required placeholder="В свободной форме"/>
         </div>
         <button type="submit">Оправить</button>
       </form>
