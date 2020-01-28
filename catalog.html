@@ -3,62 +3,78 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="дизайн-студия из Краснодара"/>
-  <meta name="keywords" content="дизайн, веб-сайты, приложения"/>
+  <meta name="description" content="дизайн-студия из Краснодара">
+  <meta name="keywords" content="дизайн, веб-сайты, приложения" />
   <title>Дизайн-студия nerds</title>
-  <link rel="stylesheet" href="#"/>
+  <link rel="stylesheet" href="#">
 </head>
 
 <body>
   <!--навигация-->
   <header class="header-catalog">
-    <h1>Магазин готовых шаблонов</h1>
     <nav class="header-nav">
       <a href="index.html">
-        <img src="https://via.placeholder.com/150x100" alt="логотип" width="" height=""/>
+        <img src="img/decor/nerds-logo.svg" alt="логотип" width="160" height="65">
       </a>
       <ul class="nav-list">
-        <li><a href="index.html" title="">студия</a></li>
-        <li><a href="">клиенты</a></li>
-        <li class="item-curent"><a href="" title="">магазин</a></li>
-        <li><a href="" title="">контакты</a></li>
+        <li><a href="index.html">Студия</a></li>
+        <li><a href="">Клиенты</a></li>
+        <li class="item-curent"><a>Магазин</a></li>
+        <li><a href="" title="">Контакты</a></li>
       </ul>
       <span class="nav-basket">
-        <a href="#">корзина</a>
+        <a href="#">Корзина</a>
       </span>
     </nav>
+    <h1>Магазин готовых шаблонов</h1>
   </header>
+
   <main>
     <!--формы сторимость, сетка, особенности-->
     <form class="selection" action="" method="get">
       <fieldset class="price">
         <legend>Стоимость:</legend>
+        <!--слайдер стоимости-->
         <div></div>
         <div>
-          <label>От<input type="text" value="0" /></label>
+          <label>От<input type="text" value="0"></label>
         </div>
         <div>
-          <label>До<input type="text" value="15000"/></label>
+          <label>До<input type="text" value="15000"></label>
         </div>
       </fieldset>
       <fieldset class="grid">
         <legend>Сетка:</legend>
-        <label><input type="radio" name="grid" value="adaptive" checked />Адаптивная</label>
-        <label><input type="radio" name="grid" value="fixed"/>Фиксированная</label>
-        <label>Резиновая<input type="radio" name="grid" value="rubber" />Резиновая</label>
+        <label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label>
+        <label><input type="radio" name="grid" value="fixed">Фиксированная</label>
+        <label><input type="radio" name="grid" value="rubber">Резиновая</label>
       </fieldset>
       <fieldset class="advantagess">
         <legend>Особенности:</legend>
-        <input type="checkbox" name="slider" id="slider-field" checked/>
-        <label for="slider-field">Слайдер</label>
-        <input type="checkbox" name="advantages" id="advantages-field"/>
-        <label for="advantages-field">Блог преимуществ</label>
-        <input type="checkbox" name="news" id="news-field" checked/>
-        <label for="news-field">Новости</label>
-        <input type="checkbox" name="gallery" id="gallery-field"/>
-        <label for="gallery-field">Галерея</label>
-        <input type="checkbox" name="basket" id="basket-field"/>
-        <label for="basket-field">Корзина</label>
+        <div>
+          <input type="checkbox" name="slider" id="slider-field" checked>
+          <label for="slider-field">Слайдер</label>
+        </div>
+        <div>
+          <input type="checkbox" name="advantages" id="advantages-field">
+          <label for="advantages-field">Блог преимуществ</label>
+        </div>
+        <div>
+          <input type="checkbox" name="news" id="news-field" checked>
+          <label for="news-field">Новости</label>
+        </div>
+        <div>
+          <input type="checkbox" name="gallery" id="gallery-field">
+          <label for="gallery-field">Галерея</label>
+        </div>
+        <div>
+          <input type="checkbox" name="basket" id="basket-field">
+          <label for="basket-field">Корзина</label>
+        </div>
+        <div>
+          <input type="checkbox" name="basket" id="basket-field">
+          <label for="basket-field">Корзина</label>
+        </div>
       </fieldset>
       <button type="submit">Показать</button>
     </form>
@@ -80,7 +96,7 @@
       <h2 class="visually-hidden">Каталог товаров</h2>
       <ul class="card-list">
         <li class="item-curent">
-          <img src="https://via.placeholder.com/150x100" alt="сайт города Седона" width="" height=""/>
+          <img src="img/content/img-sedona.jpg" alt="сайт города Седона" width="360" height="576">
           <div class="card-hover-blog">
             <h3><a href="">Sedona</a></h3>
             <p>Информационный сайт для туристов</p>
@@ -88,7 +104,7 @@
           </div>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100" alt="Приложение Pink" width="" height=""/>
+          <img src="img/content/img-pink.jpg" alt="Приложение Pink" width="360" height="576">
           <div class="card-hover-blog">
             <h3><a href="">Pink app</a></h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -96,7 +112,7 @@
           </div>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100" alt="Барбершоп Бородинский" width="" height=""/>
+          <img src="img/content/img-barbershop.jpg" alt="Барбершоп Бородинский" width="360" height="576">
           <div class="card-hover-blog">
             <h3><a href="">Barbershop</a></h3>
             <p>Сайт салоны красоты. Для мужчин, да.</p>
@@ -104,7 +120,7 @@
           </div>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100" alt="Магазин Мишутка" width="" height=""/>
+          <img src="img/content/img-mishka.jpg" alt="Магазин Мишка" width="360" height="576">
           <div class="card-hover-blog">
             <h3><a href="">Mishka</a></h3>
             <p>Интернет-магазин вязаных игрушек</p>
@@ -112,7 +128,7 @@
           </div>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100" alt="Школа А+" width="" height=""/>
+          <img src="img/content/img-aplus.jpg" alt="Школа А-плюс" width="360" height="576">
           <div class="card-hover-blog">
             <h3><a href="">A plus</a></h3>
             <p>Лендинг курсов повышения квалификации</p>
@@ -120,7 +136,7 @@
           </div>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100" alt="Квас Кваст" width="" height=""/>
+          <img src="img/content/img-kvast.jpg" alt="Квас Кваст" width="360" height="576">
           <div class="card-hover-blog">
             <h3><a href="">Кваст</a></h3>
             <p>Промо-сайт производителя крафтового кваса</p>
@@ -173,15 +189,15 @@
       <form class="feedback-form" action="" method="post">
         <div>
           <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" required placeholder="Представьтесь, пожалуйста"/>
+          <input type="text" name="name" id="name" required placeholder="Представьтесь, пожалуйста">
         </div>
         <div>
           <label for="mail">Ваш e-mail:</label>
-          <input type="email" name="mail" id="mail" required placeholder="Для отправки ответа"/>
+          <input type="email" name="mail" id="mail" required placeholder="Для отправки ответа">
         </div>
         <div>
           <label for="text">Текст письма:</label>
-          <input type="text" name="text" id="text" required placeholder="В свободной форме"/>
+          <input type="text" name="text" id="text" required placeholder="В свободной форме">
         </div>
         <button type="submit">Оправить</button>
       </form>
