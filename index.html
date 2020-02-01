@@ -59,13 +59,10 @@
         <a class="btn" href="#">Узнать больше</a>
       </div>
       <!--переключатели слайдера тут-->
-      <input type="radio" name="slider-index" id="slide-1" value="slide-1" checked>
-      <input type="radio" name="slider-index" id="slide-2" value="slide-2">
-      <input type="radio" name="slider-index" id="slide-3" value="slide-3">
-      <div>
-        <label for="slide-1">1</label>
-        <label for="slide-2">2</label>
-        <label for="slide-3">3</label>
+      <div class="botton-container">
+        <button type="button" class="slider-botton">Слайд-1</button>
+        <button type="button" class="slider-botton">Слайд-2</button>
+        <button type="button" class="slider-botton">Слайд-3</button>
       </div>
     </section>
     <!--список предложений-->
@@ -170,8 +167,8 @@
     <!--форма-->
     <section class="feedback">
       <h2>Напишите нам</h2>
+      <button type="button" class="feedback-close">Закрыть</button>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <a class="close-btn" href="#">X</a>
         <div>
           <label for="name-field">Ваше имя:</label>
           <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
