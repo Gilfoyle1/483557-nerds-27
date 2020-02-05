@@ -1,0 +1,526 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Главная*/
+.header {
+  background-color: #eeeeee;
+}
+
+.header-nav {
+  font-weight: 500;
+  line-height: 30px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list a,
+.nav-basket a {
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-basket a:hover,
+.nav-basket a:focus {
+  color: #fb565a;
+}
+
+.nav-list a:active,
+.nav-basket a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-list .item-curent,
+.nav-list .item-curent:hover {
+  color: #000000;
+  border-bottom: 2px solid #fb565a;
+}
+
+/* Слайдер */
+.slider h2 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider p {
+  color: #283136;
+}
+
+/* Кнопки и ссылки */
+.btn {
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #fb565a;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e74246;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.btn-app {
+  background-color: #00ca74;
+}
+
+.btn-app:hover {
+  background-color: #00bc6c;
+}
+
+.btn-app:active {
+  background-color: #00aa62;
+}
+
+.btn-presentation {
+  background-color: #efc84a;
+}
+
+.btn-presentation:hover {
+  background-color: #eab534;
+}
+
+.btn-presentation:active {
+  background-color: #e5a722;
+}
+
+/* Список предложений */
+.directions h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.directions p {
+  color: #283136;
+}
+
+.directions-web {
+  background-image: url("../img/decor/illustration-1.png");
+  background-repeat: no-repeat;
+}
+
+.directions-app {
+  background-image: url("../img/decor/illustration-2.png");
+  background-repeat: no-repeat;
+
+}
+
+.directions-presentation {
+  background-image: url("../img/decor/illustration-3.png");
+  background-repeat: no-repeat;
+  padding-top: 176px;
+}
+
+.directions-app h3,
+.directions-web h3,
+.directions-presentations h3 {
+  padding-top: 176px;
+}
+
+/* Блок о нас */
+.features {
+  border-top: 2px solid #eeeeee;
+}
+
+.features-about p:nth-child(1) {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.features-about p:nth-child(2) {
+  color: #283136;
+}
+
+.features-about h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-list {
+  list-style: none;
+  color: #283136;
+}
+
+.statistic p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.statistic-table tr:nth-child(1) {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.statistic-table tr:nth-child(2) {
+  line-height: 18px;
+  color: #283136;
+}
+
+/* Блок клиетов */
+
+.customers {
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.customers-list {
+  list-style: none;
+}
+
+.customers-list li {
+  border-left: 2px solid #eeeeee;
+}
+
+.customers-list a {
+  opacity: 0.2;
+}
+
+.customers-list a:hover,
+.customers-list a:focus {
+  opacity: 1;
+}
+
+.customers-list a:active {
+  opacity: 0.1;
+}
+
+/* Подвал */
+
+/* Карта */
+.footer-map {
+  background-image: url(../img/decor/map.png);
+  background-repeat: no-repeat;
+  min-height: 416px;
+}
+
+.contacts {
+  background-color: #ffffff;
+}
+
+.contacts h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts p,
+.contacts .tel {
+  line-height: 18px;
+  color: #666666;
+}
+
+/* Соц сети */
+.socials-list {
+  list-style: none;
+}
+
+
+.socials-list a {
+  width: 79px;
+  height: 79px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.socials-list a:hover,
+.socials-list a:focus {
+  background-color: #e74246;
+}
+
+.socials-list a:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+.promo p:first-child {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo p:last-child {
+  line-height: 22px;
+  color: #444444;
+}
+
+/* Форма */
+
+.feedback h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.feedback-form label {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  border: 2px solid #d7dcde;
+  opacity: 0.5;
+}
+
+.feedback-form input[type="text"]:hover,
+.feedback-form input[type="email"]:hover,
+.feedback-form textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form textarea:focus {
+  opacity: 1;
+  color: #444444;
+  border-color: #000000;
+}
+
+.feedback-form input:not(:placeholder-shown):invalid,
+.feedback-form input:not(:placeholder-shown):invalid,
+.feedback-form textarea:not(:placeholder-shown):invalid {
+  opacity: 1;
+  color: #e74246;
+  border-color: #e74246;
+}
+
+/* Страница Каталога */
+/* Header каталога */
+.header-catalog {
+  background-color: #eeeeee;
+}
+
+.header-catalog .header-logo:hover {
+  opacity: 0.8;
+}
+
+.header-catalog .header-logo:active {
+  opacity: 0.3;
+}
+
+.header-catalog h1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+}
+
+/* Формы стоимость, сетка, особенности */
+/* Стоимость */
+.selection fieldset {
+  border: none;
+}
+
+.filter legend,
+.grid legend,
+.advantages legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter legend {
+  letter-spacing: 0.18px;
+}
+
+.filter-min label,
+.filter-max label {
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #283136;
+}
+
+.filter-min input,
+.filter-max input {
+  background-color: #eeeeee;
+  border: none;
+  text-align: center;
+}
+
+.filter-min input[value="0"],
+.filter-max input[value="15000"] {
+  line-height: 22px;
+  color: #283136;
+}
+
+/* Сетка */
+
+.grid label {
+  line-height: 20px;
+  color: #283136;
+}
+
+.grid input:disabled+label,
+.advantages input:disabled+label {
+  color: rgba(40, 49, 54, 0.3);
+}
+
+/* Особенности */
+
+.advantages label {
+  line-height: 20px;
+  color: #283136;
+}
+
+.selection button {
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+.selection button:hover {
+  background-color: #dfdfdf;
+}
+
+.selection button:active {
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+}
+
+/* Сортировка */
+.sorting h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-list a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-list a:active,
+.sorting-list .item-curent {
+  color: #000000;
+}
+
+.sorting-arrow {
+  list-style: none;
+}
+
+/* Каталог товаров */
+.card-list {
+  list-style: none;
+}
+
+.card-list li {
+  position: relative;
+  border: 1px solid #eeeeee;
+  margin-top: 90px;
+  /*убрать потом!! margin*/
+}
+
+.card-list li::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/decor/browser-icon.svg);
+  background-repeat: no-repeat;
+  top: -39px;
+  width: 100%;
+  height: 40px;
+  opacity: 0.12;
+}
+
+.card-list li:hover::before {
+  opacity: 1;
+}
+
+.card-hover-blog {
+  background-color: #eeeeee;
+}
+
+.card-hover-blog a {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.card-hover-blog a:hover {
+  color: #fb565a;
+}
+
+.card-hover-blog a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.card-hover-blog p {
+  line-height: 18px;
+  color: #666666;
+  text-align: center;
+}
+
+/* Пагинация */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  font-weight: 500;
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.pagination-list .item-curent {
+  background-color: #ffffff;
+  border: 2px solid #dbdbdb;
+}
+
+.pagination-list a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-list a:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+}
