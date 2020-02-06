@@ -61,6 +61,7 @@ a {
 }
 
 .slider p {
+  font-weight: normal;
   color: #283136;
 }
 
@@ -69,6 +70,7 @@ a {
   font-weight: 500;
   line-height: 18px;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
   cursor: pointer;
@@ -110,13 +112,14 @@ a {
 
 /* Список предложений */
 .directions h3 {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .directions p {
+  font-weight: normal;
   color: #283136;
 }
 
@@ -155,6 +158,7 @@ a {
 }
 
 .features-about p:nth-child(2) {
+  font-weight: normal;
   color: #283136;
 }
 
@@ -171,16 +175,17 @@ a {
 }
 
 .statistic p {
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .statistic-table tr:nth-child(1) {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 45px;
 }
 
 .statistic-table tr:nth-child(2) {
+  font-weight: normal;
   line-height: 18px;
   color: #283136;
 }
@@ -227,13 +232,14 @@ a {
 }
 
 .contacts h3 {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
 }
 
 .contacts p,
 .contacts .tel {
+  font-weight: normal;
   line-height: 18px;
   color: #666666;
 }
@@ -262,12 +268,13 @@ a {
 }
 
 .promo p:first-child {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 36px;
   line-height: 36px;
 }
 
 .promo p:last-child {
+  font-weight: normal;
   line-height: 22px;
   color: #444444;
 }
@@ -281,13 +288,14 @@ a {
 }
 
 .feedback-form label {
-  font-weight: 700;
+  font-weight: bold;
   line-height: 18px;
 }
 
 .feedback-form input[type="text"],
 .feedback-form input[type="email"],
 .feedback-form textarea {
+  font-weight: normal;
   border: 2px solid #d7dcde;
   opacity: 0.5;
 }
@@ -344,7 +352,7 @@ a {
 .filter legend,
 .grid legend,
 .advantages legend {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -377,6 +385,7 @@ a {
 /* Сетка */
 
 .grid label {
+  font-weight: normal;
   line-height: 20px;
   color: #283136;
 }
@@ -389,6 +398,7 @@ a {
 /* Особенности */
 
 .advantages label {
+  font-weight: normal;
   line-height: 20px;
   color: #283136;
 }
@@ -413,7 +423,7 @@ a {
 
 /* Сортировка */
 .sorting h2 {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   line-height: 18px;
   text-transform: uppercase;
@@ -426,6 +436,7 @@ a {
 .sorting-list a {
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -476,7 +487,7 @@ a {
 
 .card-hover-blog a {
   display: block;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -494,6 +505,7 @@ a {
 
 .card-hover-blog p {
   line-height: 18px;
+  font-weight: normal;
   color: #666666;
   text-align: center;
 }
@@ -506,6 +518,7 @@ a {
 
 .pagination-list a {
   font-weight: 500;
+  text-transform: uppercase;
   background-color: #eeeeee;
   color: #000000;
 }
