@@ -18,15 +18,20 @@
       <a class="header-logo">
         <img src="img/decor/nerds-logo.svg" alt="Логотип дизайн-студии Nerds" width="160" height="65">
       </a>
-      <ul class="nav-list">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <span class="nav-basket">
-        <a href="#">Корзина</a>
-      </span>
+      <div class="nav-wrapper">
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="nav-basket">
+            <a href="#">Корзина</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     </nav>
   </header>
 
@@ -36,29 +41,35 @@
     <!--слайдер-->
     <section class="slider">
       <h2 class="visually-hidden">Преимущества</h2>
-      <div class="slider-wrapper">
-        <h2>Долго, дорого, скрупулезно.</h2>
-        <p>
-          Математически выверенный дизайн для вашего сайта или мобильного
-          приложения.
-        </p>
-        <a class="btn" href="#">Узнать больше</a>
+      <div class="slider-wrapper-first">
+        <div class="slider-container-first">
+          <h2>Долго, дорого, скрупулезно.</h2>
+          <p>
+            Математически выверенный дизайн<br> для вашего сайта или мобильного
+            приложения.
+          </p>
+          <a class="btn slider-btn" href="#">Узнать больше</a>
+        </div>
       </div>
-      <div class="slider-wrapper">
-        <h2>Любим математику как никто другой</h2>
-        <p>
-          Никакого креатива, только математические формулы для расчета
-          идеальных пропорций.
-        </p>
-        <a class="btn" href="#">Узнать больше</a>
+      <div class="slider-wrapper-second">
+        <div class="slider-container-second">
+          <h2>Любим математику как никто другой</h2>
+          <p>
+            Никакого креатива, только математические формулы<br> для расчета
+            идеальных пропорций.
+          </p>
+          <a class="btn slider-btn" href="#">Узнать больше</a>
+        </div>
       </div>
-      <div class="slider-wrapper">
-        <h2>Только ночь, только хардкор</h2>
-        <p>
-          Работать днем, как все? Мы против этого. Ближе к полуночи работа
-          только начинается.
-        </p>
-        <a class="btn" href="#">Узнать больше</a>
+      <div class="slider-wrapper-third">
+        <div class="slider-container-third">
+          <h2>Только ночь, только хардкор</h2>
+          <p>
+            Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа
+            только начинается.
+          </p>
+          <a class="btn slider-btn" href="#">Узнать больше</a>
+        </div>
       </div>
       <!--переключатели слайдера тут-->
       <div class="button-container">
@@ -144,23 +155,24 @@
     <section class="footer-map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <!--карта-->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018936266584!2d30.321953057888255!3d59.93871648187632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2suk!4v1581093288947!5m2!1sru!2suk"
+        width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       <div class="contacts">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <a class="tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <a class="btn" href="#">Напишите нам</a>
+        <a class="btn write-us" href="#">Напишите нам</a>
       </div>
     </section>
     <!-- Соц сети -->
     <section class="footer-socials">
       <h2 class="visually-hidden">Соц сети</h2>
-      <div class="socials">
-        <ul class="socials-list">
-          <li><a href="https://vk.com/" target="_blank">Вконтакте</a></li>
-          <li><a href="https://www.facebook.com/" target="_blank">Фейсбук</a></li>
-          <li><a href="https://www.instagram.com/" target="_blank">Инстаграм</a></li>
-        </ul>
-      </div>
+      <ul class="socials-list">
+        <li><a class="btn-vk" href="https://vk.com/" target="_blank">Вконтакте</a></li>
+        <li><a class="btn-fb" href="https://www.facebook.com/" target="_blank">Фейсбук</a></li>
+        <li><a class="bt-inst" href="https://www.instagram.com/" target="_blank">Инстаграм</a></li>
+      </ul>
       <div class="promo">
         <p>Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -172,19 +184,19 @@
       <h2>Напишите нам</h2>
       <button type="button" class="feedback-close"><span class="visually-hidden">Закрыть</span></button>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <div>
-          <label for="name-field">Ваше имя:</label>
+        <div class="form-wrapper">
+          <label for="name-field">Ваше имя:</label><br>
           <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$" required>
-        </div>
-        <div>
-          <label for="email-field">Ваш e-mail:</label>
+        </div class="form-wrapper">
+        <div class="form-wrapper">
+          <label for="email-field">Ваш e-mail:</label><br>
           <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
         </div>
-        <div>
-          <label for="text-field">Текст письма:</label>
+        <div class="form-wrapper">
+          <label for="text-field">Текст письма:</label><br>
           <textarea name="text" id="text-field" placeholder="В свободной форме" required></textarea>
         </div>
-        <button class="btn" type="submit">Отправить</button>
+        <button class="btn btn-form" type="submit">Отправить</button>
       </form>
     </section>
   </footer>
