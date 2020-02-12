@@ -46,6 +46,7 @@ html {
   padding: 17px 38px;
   border-radius: 3px;
   border: none;
+  vertical-align: middle;
 }
 
 .btn:hover {
@@ -799,7 +800,7 @@ html {
   height: 2px;
   background-color: #00ca74;
   top: 50%;
-  left: 20px;
+  left: 25px;
 }
 
 .filter-line {
@@ -812,7 +813,7 @@ html {
   left: 20px;
 }
 
-.filter-line::before {
+.filter-button-min {
   content: "";
   position: absolute;
   width: 23px;
@@ -822,24 +823,27 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   top: -9px;
-  left: -10px;
+  left: -5px;
   z-index: 10;
   cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
 }
 
-.filter-line::after {
+.filter-button-max {
   content: "";
   position: absolute;
   width: 23px;
   height: 23px;
-  background-color: transparent;
   background-image: url(../img/decor/filter-button-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
   top: -9px;
-  left: 130px;
+  left: 136px;
   z-index: 10;
   cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
 }
 
 .filter-wrapper {
@@ -1070,20 +1074,24 @@ input[type="radio"]+label:focus:before {
   list-style: none;
 }
 
+.arrow-wrapper {
+  padding-top: 5px;
+}
+
 .arrow-wrapper .arrow-down,
 .arrow-wrapper .arrow-up {
   font-size: 0;
 }
 
 .arrow-wrapper .arrow-down {
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 .arrow-wrapper .arrow-down::before {
   display: inline-block;
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-image: url(../img/decor/arrow-down-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1093,8 +1101,8 @@ input[type="radio"]+label:focus:before {
 .arrow-wrapper .arrow-up::before {
   display: inline-block;
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-image: url(../img/decor/arrow-up-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1116,7 +1124,7 @@ input[type="radio"]+label:focus:before {
 /* Каталог товаров */
 .card {
   width: 800px;
-  padding-top: 12px;
+  padding-top: 7px;
 }
 
 .card-list {
