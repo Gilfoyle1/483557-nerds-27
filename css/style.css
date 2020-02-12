@@ -165,7 +165,7 @@ html {
   display: flex;
   width: 1440px;
   margin: 0 auto;
-  padding-top: 12px;
+  padding-top: 10px;
   background-color: #eeeeee;
   justify-content: center;
   overflow: hidden;
@@ -204,6 +204,7 @@ html {
   display: inline-block;
   padding: 16px 52px;
   border-radius: 3px;
+  vertical-align: middle;
 }
 
 .slider-wrapper-second {
@@ -730,6 +731,7 @@ html {
   margin-top: 37px;
   padding: 17px 84px;
   margin-bottom: 80px;
+  vertical-align: middle;
 }
 
 /* Страница Каталога */
@@ -971,6 +973,7 @@ input[type="checkbox"]:not(:checked)+label,
 input[type="radio"]:checked+label,
 input[type="radio"]:not(:checked)+label {
   display: inline-block;
+  vertical-align: middle;
   position: relative;
   padding-left: 35px;
   cursor: pointer;
@@ -1059,6 +1062,7 @@ input[type="radio"]+label:focus:before {
   line-height: 18px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
 }
 
 .sorting-list a:hover {
@@ -1096,7 +1100,10 @@ input[type="radio"]+label:focus:before {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.2;
+  cursor: pointer;
+  vertical-align: top;
 }
+
 
 .arrow-wrapper .arrow-up::before {
   display: inline-block;
@@ -1108,6 +1115,7 @@ input[type="radio"]+label:focus:before {
   background-position: center;
   opacity: 0.2;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .arrow-wrapper .arrow-down:hover::before,
