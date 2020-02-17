@@ -505,7 +505,8 @@ html {
   background-image: url(../img/decor/map.png);
   background-repeat: no-repeat;
   margin: auto;
-  max-width: 1440px;
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -513,7 +514,8 @@ html {
   width: 319px;
   min-height: 308px;
   box-sizing: border-box;
-  left: 140px;
+  left: 50%;
+  margin-left: -580px;
   position: absolute;
   bottom: 65px;
   background-color: #ffffff;
