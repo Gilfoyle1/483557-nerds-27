@@ -72,9 +72,12 @@
       </div>
       <!--переключатели слайдера тут-->
       <div class="button-container">
-        <button type="button" class="slider-button"><span class="visually-hidden">Слайд-2</span></button>
-        <button type="button" class="slider-button"><span class="visually-hidden">Слайд-3</span></button>
-        <button type="button" class="slider-button"><span class="visually-hidden">Слайд-1</span></button>
+        <button type="button" class="slider-button" class="slide-1"><span
+            class="visually-hidden">Слайд-2</span></button>
+        <button type="button" class="slider-button" class="slide-2"><span
+            class="visually-hidden">Слайд-3</span></button>
+        <button type="button" class="slider-button" class="slide-3"><span
+            class="visually-hidden">Слайд-1</span></button>
       </div>
     </section>
     <!--список предложений-->
@@ -190,28 +193,27 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </section>
-
-    <!--форма-->
-    <section class="feedback">
-      <h2>Напишите нам</h2>
-      <button type="button" class="feedback-close"><span class="visually-hidden">Закрыть</span></button>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form-wrapper">
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$" required>
-        </div>
-        <div class="form-wrapper">
-          <label for="email-field">Ваш e-mail:</label>
-          <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
-        </div>
-        <div class="form-wrapper">
-          <label for="text-field">Текст письма:</label>
-          <textarea name="text" id="text-field" placeholder="В свободной форме" required></textarea>
-        </div>
-        <button class="btn btn-form" type="submit">Отправить</button>
-      </form>
-    </section>
   </footer>
+  <!--форма-->
+  <section class="feedback">
+    <h2>Напишите нам</h2>
+    <button type="button" class="feedback-close"><span class="visually-hidden">Закрыть</span></button>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-wrapper">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$" required>
+      </div>
+      <div class="form-wrapper">
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
+      </div>
+      <div class="form-wrapper">
+        <label for="text-field">Текст письма:</label>
+        <textarea name="text" id="text-field" placeholder="В свободной форме" required></textarea>
+      </div>
+      <button class="btn btn-form" type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>

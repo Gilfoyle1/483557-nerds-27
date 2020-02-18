@@ -71,7 +71,7 @@
           <label for="fixed-field">Фиксированная</label>
         </div>
         <div class="radio-wrapper">
-          <input class="visually-hidden" type="radio" name="grid" id="rubber-field" value="rubber">
+          <input class="visually-hidden" type="radio" name="grid" id="rubber-field" value="rubber" disabled>
           <label for="rubber-field">Резиновая</label>
         </div>
       </fieldset>
@@ -121,7 +121,7 @@
             <img src="img/content/img-sedona.jpg" alt="Сайт города Седона" width="360" height="576">
             <div class="card-hover-blog">
               <h3><a href="#">Sedona</a></h3>
-              <p>Информационный сайт<br> для туристов</p>
+              <p>Информационный сайт для туристов</p>
 
               <div class="card-btn-wprapper"> <button class="btn card-btn" type="button">9 900 руб.</button></div>
             </div>
@@ -130,7 +130,7 @@
             <img src="img/content/img-pink.jpg" alt="Приложение Pink" width="360" height="576">
             <div class="card-hover-blog">
               <h3><a href="#">Pink app</a></h3>
-              <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
               <div class="card-btn-wprapper">
                 <button class="btn card-btn" type="button">9 900 руб.</button>
               </div>
@@ -140,7 +140,7 @@
             <img src="img/content/img-barbershop.jpg" alt="Барбершоп Бородинский" width="360" height="576">
             <div class="card-hover-blog">
               <h3><a href="#">Barbershop</a></h3>
-              <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
               <div class="card-btn-wprapper">
                 <button class="btn card-btn" type="button">9 900 руб.</button>
               </div>
@@ -151,7 +151,7 @@
             <img src="img/content/img-mishka.jpg" alt="Магазин Мишка" width="360" height="576">
             <div class="card-hover-blog">
               <h3><a href="#">Mishka</a></h3>
-              <p>Интернет-магазин<br> вязаных игрушек</p>
+              <p>Интернет-магазин вязаных игрушек</p>
               <div class="card-btn-wprapper"><button class="btn card-btn" type="button">9 900 руб.</button></div>
 
             </div>
@@ -160,7 +160,7 @@
             <img src="img/content/img-aplus.jpg" alt="Школа А-плюс" width="360" height="576">
             <div class="card-hover-blog">
               <h3><a href="">A plus</a></h3>
-              <p>Лендинг курсов повышения<br> квалификации</p>
+              <p>Лендинг курсов повышения квалификации</p>
               <div class="card-btn-wprapper"><button class="btn card-btn" type="button">9 900 руб.</button></div>
             </div>
           </li>
@@ -168,7 +168,7 @@
             <img src="img/content/img-kvast.jpg" alt="Квас Кваст" width="360" height="576">
             <div class="card-hover-blog">
               <h3><a href="">Кваст</a></h3>
-              <p>Промо-сайт производителя<br> крафтового кваса</p>
+              <p>Промо-сайт производителя крафтового кваса</p>
               <div class="card-btn-wprapper"><button class="btn card-btn" type="button">9 900 руб.</button></div>
             </div>
           </li>
@@ -227,28 +227,27 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </section>
-
-    <!--форма-->
-    <section class="feedback">
-      <h2>Напишите нам</h2>
-      <button type="button" class="feedback-close"><span class="visually-hidden">Закрыть</span></button>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form-wrapper">
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$" required>
-        </div>
-        <div class="form-wrapper">
-          <label for="email-field">Ваш e-mail:</label>
-          <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
-        </div>
-        <div class="form-wrapper">
-          <label for="text-field">Текст письма:</label>
-          <textarea name="text" id="text-field" placeholder="В свободной форме" required></textarea>
-        </div>
-        <button class="btn btn-form" type="submit">Отправить</button>
-      </form>
-    </section>
   </footer>
+  <!--форма-->
+  <section class="feedback">
+    <h2>Напишите нам</h2>
+    <button type="button" class="feedback-close"><span class="visually-hidden">Закрыть</span></button>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-wrapper">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$" required>
+      </div>
+      <div class="form-wrapper">
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
+      </div>
+      <div class="form-wrapper">
+        <label for="text-field">Текст письма:</label>
+        <textarea name="text" id="text-field" placeholder="В свободной форме" required></textarea>
+      </div>
+      <button class="btn btn-form" type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>

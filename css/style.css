@@ -10,8 +10,8 @@ body {
   min-width: 1200px;
 }
 
-a {
-  text-decoration: none;
+html {
+  box-sizing: border-box;
 }
 
 *,
@@ -20,8 +20,13 @@ a {
   box-sizing: inherit;
 }
 
-html {
-  box-sizing: border-box;
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -42,7 +47,7 @@ html {
   color: #ffffff;
   background-color: #fb565a;
   cursor: pointer;
-  padding: 17px 38px;
+  padding: 17px 40px;
   border-radius: 3px;
   border: none;
   vertical-align: middle;
@@ -56,6 +61,13 @@ html {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.btn.disabled,
+.btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #c1c1c1;
 }
 
 /*Главная*/
@@ -72,7 +84,6 @@ html {
   background-color: #eeeeee;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   width: 1160px;
   box-sizing: border-box;
   margin-left: auto;
@@ -83,6 +94,7 @@ html {
 .header-logo {
   width: 160px;
   height: 55px;
+  padding-top: 25px;
 }
 
 .nav-container {
@@ -103,14 +115,16 @@ html {
   list-style: none;
 }
 
-.nav-list li {
-  padding-left: 1px;
+.nav-list li:not(:first-child) {
+  padding-left: 15px;
 }
 
 .nav-list a,
 .nav-basket a {
   text-transform: uppercase;
   color: #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .nav-list a:hover,
@@ -155,7 +169,7 @@ html {
 /* Слайдер */
 
 /* slider 2/3 off */
-.slider-wrapper-first,
+.slider-wrapper-second,
 .slider-wrapper-third {
   display: none;
 }
@@ -201,7 +215,7 @@ html {
 
 .slider-btn {
   display: inline-block;
-  padding: 16px 52px;
+  padding: 16px 54px;
   border-radius: 3px;
   vertical-align: middle;
 }
@@ -242,17 +256,19 @@ html {
 
 .button-container button {
   position: relative;
-  top: 314px;
-  height: 16px;
-  width: 6px;
-  margin-left: 11px;
+  display: inline-block;
+  top: 316px;
+  height: 18px;
+  width: 18px;
+  margin-left: 13px;
   border-radius: 50%;
   cursor: pointer;
   transform: translateX(-5px);
   border: none;
 }
 
-.button-container button:hover::before {
+.button-container button:hover::before,
+.button-container button:focus::before {
   content: "";
   position: absolute;
   bottom: 50%;
@@ -260,7 +276,7 @@ html {
   width: 8px;
   height: 8px;
   box-sizing: border-box;
-  border: 1px solid #dfdfdf;
+  border: 2px solid #c1c1c1;
   border-radius: 50%;
   transform: translateX(50%) translateY(50%);
 }
@@ -356,6 +372,9 @@ html {
   border-bottom: 2px solid #eeeeee;
 }
 
+.features-about {
+  width: 680px;
+}
 
 .features-about h3 {
   font-size: 16px;
@@ -363,7 +382,7 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 38px;
 }
 
 .features-about p:nth-child(1) {
@@ -371,27 +390,23 @@ html {
   line-height: 45px;
   font-weight: 500;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 44px;
 }
 
 .features-about p:nth-child(2) {
   color: #283136;
   margin: 0;
-  padding-top: 37px;
+  padding-top: 34px;
 }
 
 .about-list {
-  position: absolute;
   margin: 0;
   padding: 0;
-  padding-left: 36px;
+  padding-left: 37px;
   list-style: none;
   color: #283136;
 }
 
-.features-about {
-  width: 680px;
-}
 
 .about-list li {
   padding-top: 24px;
@@ -410,7 +425,7 @@ html {
 }
 
 .statistic {
-  padding-top: 10px;
+  padding-top: 9px;
   width: 360px;
   margin-left: auto;
 }
@@ -418,19 +433,19 @@ html {
 .statistic p {
   font-weight: 700;
   text-transform: uppercase;
-  padding-left: 16px;
+  padding-left: 17px;
   padding-top: 29px;
   margin: 0;
 }
 
 .statistic-table {
-  padding-top: 55px;
+  padding-top: 53px;
 }
 
 
 .statistic-table td {
   width: 308px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
   margin: 0;
 }
 
@@ -449,6 +464,7 @@ html {
 
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
@@ -461,7 +477,7 @@ html {
 }
 
 .customers-list li {
-  padding-top: 10px;
+  padding-top: 5px;
   position: relative;
   text-align: center;
   width: 260px;
@@ -497,13 +513,15 @@ html {
 /* Карта */
 .footer {
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 82px;
+  margin-bottom: px;
 }
 
 .footer-map {
   position: relative;
   background-image: url(../img/decor/map.png);
   background-repeat: no-repeat;
+  height: 416px;
   margin: auto;
   background-size: cover;
   background-position: center;
@@ -515,19 +533,20 @@ html {
   min-height: 308px;
   box-sizing: border-box;
   left: 50%;
+  top: 55px;
   margin-left: -580px;
   position: absolute;
   bottom: 65px;
   background-color: #ffffff;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 50px;
 }
 
 .contacts h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  padding-top: 55px;
   padding-bottom: 7px;
   margin: 0;
 }
@@ -541,6 +560,7 @@ html {
 .write-us {
   margin-top: 32px;
   padding: 15px 44px;
+  width: 100%;
 }
 
 /* Соц сети */
@@ -550,16 +570,18 @@ html {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 25px;
+  margin-top: 35px;
+  margin-bottom: 55px;
   box-sizing: content-box;
 }
 
 .socials-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 260px;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 33px;
   padding-left: 20px;
   list-style: none;
   flex-wrap: wrap;
@@ -595,13 +617,12 @@ html {
 
 .promo {
   padding-left: 140px;
-  padding-top: 10px;
+  padding-top: 45px;
   width: 560px;
 }
 
 .promo p {
   margin: 0;
-  padding-top: 35px;
 }
 
 .promo p:first-child {
@@ -613,17 +634,21 @@ html {
 .promo p:last-child {
   line-height: 22px;
   color: #444444;
-  padding-top: 9px;
+  padding-top: 7px;
 }
 
 /* Форма */
 
 .feedback {
-  position: relative;
+  position: fixed;
   width: 960px;
   background-color: #ffffff;
   margin: auto;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  margin-left: -480px;
+  bottom: 147px;
+  left: 50%;
+  display: none;
 }
 
 .feedback h2 {
@@ -639,14 +664,15 @@ html {
   background-image: url(../img/decor/close-cross-icon.svg);
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
   border: none;
   opacity: 0.3;
   width: 25px;
   height: 25px;
   position: absolute;
-  left: 850px;
-  top: 78px;
+  left: 848px;
+  top: 75px;
+  cursor: pointer;
 }
 
 .feedback-close:hover {
@@ -695,8 +721,8 @@ html {
 .form-wrapper textarea {
   margin-top: 5px;
   padding: 13px;
-  width: 730px;
-  height: 90px;
+  width: 760px;
+  height: 118px;
 }
 
 
@@ -731,7 +757,7 @@ html {
 
 .btn-form {
   display: inline-block;
-  margin-top: 37px;
+  margin-top: 40px;
   padding: 17px 84px;
   margin-bottom: 80px;
   vertical-align: middle;
@@ -883,11 +909,16 @@ html {
 .filter-max input[type="text"] {
   background-color: #eeeeee;
   border: none;
+  border-radius: 3px;
   text-align: center;
   width: 80px;
   box-sizing: border-box;
   padding: 8px 16px;
   margin-left: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
 .filter-min input[value="0"],
@@ -989,8 +1020,9 @@ input[type="radio"]:not(:checked)+label::before {
   position: absolute;
   left: -1px;
   top: -5px;
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
 }
 
 input[type="checkbox"]:checked+label::before {
@@ -1055,8 +1087,9 @@ input[type="radio"]:focus+label::before {
   justify-content: space-around;
   width: 300px;
   margin: 0;
-  padding-left: 220px;
+  padding-left: 200px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .sorting-list a {
@@ -1066,6 +1099,7 @@ input[type="radio"]:focus+label::before {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   vertical-align: middle;
+  padding-left: 20px;
 }
 
 .sorting-list a:hover {
@@ -1082,7 +1116,7 @@ input[type="radio"]:focus+label::before {
 }
 
 .arrow-wrapper {
-  padding-top: 5px;
+  padding-top: 2px;
 }
 
 .arrow-wrapper .arrow-down,
@@ -1135,7 +1169,7 @@ input[type="radio"]:focus+label::before {
 /* Каталог товаров */
 .card {
   width: 800px;
-  padding-top: 7px;
+  padding-top: 10px;
 }
 
 .card-list {
@@ -1180,6 +1214,7 @@ input[type="radio"]:focus+label::before {
   width: 100%;
   opacity: 0;
   background-color: #eeeeee;
+  padding: 0px 65px;
 }
 
 li:hover .card-hover-blog {
@@ -1193,7 +1228,7 @@ li:hover .card-hover-blog {
 
 .card-hover-blog p {
   margin: auto;
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
 .card-hover-blog a {
@@ -1230,9 +1265,9 @@ li:hover .card-hover-blog {
 }
 
 .card-btn {
-  margin-top: 28px;
+  margin-top: 30px;
   margin-bottom: 43px;
-  padding: 15px 62px;
+  padding: 15px 60px;
 }
 
 /* Пагинация */
