@@ -1,13 +1,13 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
-  min-width: 1200px;
 }
 
 html {
@@ -40,6 +40,7 @@ img {
 /* Кнопки и ссылки */
 .btn {
   display: inline-block;
+  padding: 17px 40px;
   font-weight: 500;
   line-height: 18px;
   text-align: center;
@@ -47,7 +48,6 @@ img {
   color: #ffffff;
   background-color: #fb565a;
   cursor: pointer;
-  padding: 17px 40px;
   border-radius: 3px;
   border: none;
   vertical-align: middle;
@@ -72,16 +72,12 @@ img {
 
 /*Главная*/
 .header {
-  background-color: #eeeeee;
   width: 100%;
   margin: 0 auto;
+  background-color: #eeeeee;
 }
 
 .header-nav {
-  font-weight: 500;
-  line-height: 30px;
-  color: #000000;
-  background-color: #eeeeee;
   display: flex;
   justify-content: space-between;
   width: 1160px;
@@ -89,6 +85,10 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-top: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #000000;
+  background-color: #eeeeee;
 }
 
 .header-logo {
@@ -99,19 +99,19 @@ img {
 
 .nav-container {
   display: flex;
+  justify-content: space-between;
   padding-top: 50px;
   width: 800px;
-  justify-content: space-between;
 }
 
 .nav-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 440px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 440px;
   list-style: none;
 }
 
@@ -121,10 +121,10 @@ img {
 
 .nav-list a,
 .nav-basket a {
-  text-transform: uppercase;
-  color: #000000;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .nav-list a:hover,
@@ -142,28 +142,28 @@ img {
 .nav-list .item-curent,
 .nav-list .item-curent:hover,
 .nav-basket .item-curent {
+  padding-bottom: 9px;
   color: #000000;
   border-bottom: 2px solid #fb565a;
-  padding-bottom: 9px;
 }
 
 .nav-basket a {
+  position: relative;
+  width: 120px;
   margin: 0;
   padding: 0;
-  width: 120px;
   text-align: right;
-  position: relative;
 }
 
 .nav-basket a::before {
   content: "";
   position: absolute;
+  top: 2px;
+  left: -40px;
   width: 18px;
   height: 18px;
   background-image: url(../img/decor/cart-icon.svg);
   background-repeat: no-repeat;
-  top: 2px;
-  left: -40px;
 }
 
 /* Слайдер */
@@ -176,35 +176,34 @@ img {
 
 .slider {
   display: flex;
+  justify-content: center;
   width: 100%;
   margin: 0 auto;
   padding-top: 10px;
   background-color: #eeeeee;
-  justify-content: center;
-  overflow: hidden;
 }
 
 .slider-wrapper-first {
   width: 1200px;
+  padding-bottom: 80px;
   background-image: url(../img/decor/slide1.png);
   background-repeat: no-repeat;
   background-position: 452px 15px;
-  padding-bottom: 80px;
 }
 
 
 .slider h2 {
+  margin: 0;
+  padding-bottom: 29px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  margin: 0;
-  padding-bottom: 29px;
 }
 
 .slider p {
-  color: #283136;
   margin: 0;
   padding-bottom: 40px;
+  color: #283136;
 }
 
 .slider-container-first {
@@ -215,17 +214,17 @@ img {
 
 .slider-btn {
   display: inline-block;
+  vertical-align: middle;
   padding: 16px 54px;
   border-radius: 3px;
-  vertical-align: middle;
 }
 
 .slider-wrapper-second {
   width: 1200px;
+  padding-bottom: 80px;
   background-image: url(../img/decor/slide2.png);
   background-repeat: no-repeat;
   background-position: 515px top;
-  padding-bottom: 80px;
 }
 
 .slider-container-second {
@@ -237,10 +236,10 @@ img {
 
 .slider-wrapper-third {
   width: 1200px;
+  padding-bottom: 80px;
   background-image: url(../img/decor/slide3.png);
   background-repeat: no-repeat;
   background-position: 420px bottom;
-  padding-bottom: 80px;
 }
 
 .slider-container-third {
@@ -252,19 +251,22 @@ img {
 
 .button-container {
   position: absolute;
+  left: 50%;
+  top: 432px;
+  margin-left: -50px;
 }
 
 .button-container button {
   position: relative;
   display: inline-block;
-  top: 316px;
   height: 18px;
   width: 18px;
   margin-left: 13px;
-  border-radius: 50%;
   cursor: pointer;
   transform: translateX(-5px);
+  border-radius: 50%;
   border: none;
+  background-color: #ffffff;
 }
 
 .button-container button:hover::before,
@@ -285,8 +287,8 @@ img {
 
 .directions {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 1160px;
   margin: auto;
   margin-top: 79px;
@@ -294,20 +296,20 @@ img {
 }
 
 .directions h3 {
+  margin: 0;
+  padding-top: 173px;
+  padding-bottom: 15px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  padding-top: 173px;
-  margin: 0;
-  padding-bottom: 15px;
 }
 
 .directions p {
-  color: #283136;
   width: 250px;
   margin: 0;
   padding-bottom: 30px;
+  color: #283136;
 }
 
 .directions-web,
@@ -363,11 +365,11 @@ img {
 .features {
   display: flex;
   justify-content: space-between;
+  width: 1160px;
   margin: auto;
+  margin-top: 40px;
   padding-top: 30px;
   padding-bottom: 50px;
-  width: 1160px;
-  margin-top: 40px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
@@ -377,26 +379,26 @@ img {
 }
 
 .features-about h3 {
+  margin: 0;
+  padding-top: 38px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
-  padding-top: 38px;
 }
 
 .features-about p:nth-child(1) {
+  margin: 0;
+  padding-top: 44px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-  margin: 0;
-  padding-top: 44px;
 }
 
 .features-about p:nth-child(2) {
-  color: #283136;
   margin: 0;
   padding-top: 34px;
+  color: #283136;
 }
 
 .about-list {
@@ -409,8 +411,8 @@ img {
 
 
 .about-list li {
-  padding-top: 24px;
   position: relative;
+  padding-top: 24px;
 }
 
 .about-list li::before {
@@ -425,17 +427,17 @@ img {
 }
 
 .statistic {
-  padding-top: 9px;
   width: 360px;
   margin-left: auto;
+  padding-top: 9px;
 }
 
 .statistic p {
+  margin: 0;
+  padding-top: 29px;
+  padding-left: 17px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-left: 17px;
-  padding-top: 29px;
-  margin: 0;
 }
 
 .statistic-table {
@@ -445,8 +447,8 @@ img {
 
 .statistic-table td {
   width: 308px;
-  padding-bottom: 23px;
   margin: 0;
+  padding-bottom: 23px;
 }
 
 .statistic-table tr:nth-child(1) {
@@ -464,23 +466,23 @@ img {
 
 .customers-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1160px;
   margin: 0 auto;
   padding: 0;
   padding-top: 40px;
   padding-bottom: 34px;
   align-items: center;
-  width: 1160px;
   border-bottom: 2px solid #eeeeee;
   list-style: none;
 }
 
 .customers-list li {
-  padding-top: 5px;
   position: relative;
-  text-align: center;
   width: 260px;
+  padding-top: 5px;
+  text-align: center;
 }
 
 .customers-list li:not(:first-of-type)::after {
@@ -514,41 +516,41 @@ img {
 .footer {
   margin: 0 auto;
   margin-top: 82px;
-  margin-bottom: px;
+  margin-bottom: 55px;
 }
 
 .footer-map {
   position: relative;
-  background-image: url(../img/decor/map.png);
-  background-repeat: no-repeat;
   height: 416px;
   margin: auto;
+  background-image: url(../img/decor/map.png);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 
 .contacts {
+  position: absolute;
   width: 319px;
   min-height: 308px;
-  box-sizing: border-box;
   left: 50%;
   top: 55px;
-  margin-left: -580px;
-  position: absolute;
   bottom: 65px;
-  background-color: #ffffff;
+  margin-left: -580px;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
+  box-sizing: border-box;
+  background-color: #ffffff;
 }
 
 .contacts h3 {
+  margin: 0;
+  padding-bottom: 7px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  padding-bottom: 7px;
-  margin: 0;
 }
 
 .contacts p,
@@ -558,9 +560,9 @@ img {
 }
 
 .write-us {
+  width: 100%;
   margin-top: 32px;
   padding: 15px 44px;
-  width: 100%;
 }
 
 /* Соц сети */
@@ -568,33 +570,31 @@ img {
 .footer-socials {
   display: flex;
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 35px;
-  margin-bottom: 55px;
+  margin-right: auto;
+  margin-left: auto;
   box-sizing: content-box;
 }
 
 .socials-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 260px;
   margin: 0;
   padding-top: 33px;
   padding-left: 20px;
   list-style: none;
-  flex-wrap: wrap;
 }
 
 
 .socials-list a {
   display: flex;
-  background-color: #e1e1e1;
   justify-content: center;
   align-items: center;
   width: 80px;
   height: 80px;
+  background-color: #e1e1e1;
   border-radius: 50%;
 }
 
@@ -616,9 +616,9 @@ img {
 
 
 .promo {
+  width: 560px;
   padding-left: 140px;
   padding-top: 45px;
-  width: 560px;
 }
 
 .promo p {
@@ -632,46 +632,46 @@ img {
 }
 
 .promo p:last-child {
+  padding-top: 7px;
   line-height: 22px;
   color: #444444;
-  padding-top: 7px;
 }
 
 /* Форма */
 
 .feedback {
   position: fixed;
-  width: 960px;
-  background-color: #ffffff;
-  margin: auto;
-  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-  margin-left: -480px;
-  bottom: 147px;
-  left: 50%;
   display: none;
+  width: 960px;
+  margin: auto;
+  margin-left: -480px;
+  left: 50%;
+  bottom: 147px;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
 .feedback h2 {
   font-weight: 500;
-  font-size: 45px;
-  line-height: 45px;
   margin: 0;
   padding-top: 66px;
   padding-left: 99px;
+  font-size: 45px;
+  line-height: 45px;
 }
 
 .feedback-close {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 75px;
+  left: 848px;
   background-image: url(../img/decor/close-cross-icon.svg);
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
   opacity: 0.3;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  left: 848px;
-  top: 75px;
   cursor: pointer;
 }
 
@@ -684,11 +684,11 @@ img {
 }
 
 .feedback-form {
-  width: 760px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 760px;
+  margin: auto;
 }
 
 .feedback-form .form-wrapper {
@@ -708,8 +708,8 @@ img {
 .form-wrapper input[type="text"],
 .form-wrapper input[type="email"] {
   width: 360px;
-  padding: 14px 12px;
   margin-top: 5px;
+  padding: 14px 12px;
   border-radius: 3px;
   box-sizing: border-box;
 }
@@ -719,10 +719,10 @@ img {
 }
 
 .form-wrapper textarea {
-  margin-top: 5px;
-  padding: 13px;
   width: 760px;
   height: 118px;
+  margin-top: 5px;
+  padding: 13px;
 }
 
 
@@ -758,8 +758,8 @@ img {
 .btn-form {
   display: inline-block;
   margin-top: 40px;
-  padding: 17px 84px;
   margin-bottom: 80px;
+  padding: 17px 84px;
   vertical-align: middle;
 }
 
@@ -778,12 +778,12 @@ img {
 
 .header-catalog h1 {
   margin: 0;
+  padding-top: 87px;
+  padding-bottom: 110px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   text-align: center;
-  padding-top: 87px;
-  padding-bottom: 110px;
 }
 
 .main-catalog {
@@ -816,12 +816,12 @@ img {
 }
 
 .filter-cost {
+  position: relative;
   width: 260px;
   min-height: 80px;
+  margin: 0;
   background-color: #eeeeee;
   border-radius: 3px;
-  position: relative;
-  margin: 0;
 }
 
 .filter-cost::after {
@@ -838,10 +838,10 @@ img {
   position: absolute;
   width: 219px;
   height: 2px;
-  background-color: #d7dcde;
   margin: auto;
   top: 50%;
   left: 20px;
+  background-color: #d7dcde;
 }
 
 .filter-button-min {
@@ -849,16 +849,16 @@ img {
   position: absolute;
   width: 23px;
   height: 23px;
+  top: -9px;
+  left: -5px;
+  padding: 0;
+  z-index: 10;
+  border-radius: 50%;
   background-color: transparent;
   background-image: url(../img/decor/filter-button-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
-  top: -9px;
-  left: -5px;
-  z-index: 10;
   cursor: pointer;
-  padding: 0;
-  border-radius: 50%;
 }
 
 .filter-button-max {
@@ -866,22 +866,22 @@ img {
   position: absolute;
   width: 23px;
   height: 23px;
+  top: -9px;
+  left: 136px;
+  padding: 0;
+  z-index: 10;
+  border-radius: 50%;
   background-image: url(../img/decor/filter-button-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
-  top: -9px;
-  left: 136px;
-  z-index: 10;
   cursor: pointer;
-  padding: 0;
-  border-radius: 50%;
 }
 
 .filter-wrapper {
   display: flex;
-  margin-top: 15px;
-  width: 260px;
   justify-content: space-between;
+  width: 260px;
+  margin-top: 15px;
 }
 
 
@@ -907,14 +907,14 @@ img {
 
 .filter-min input[type="text"],
 .filter-max input[type="text"] {
-  background-color: #eeeeee;
-  border: none;
-  border-radius: 3px;
-  text-align: center;
   width: 80px;
-  box-sizing: border-box;
-  padding: 8px 16px;
   margin-left: 10px;
+  padding: 8px 16px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: none;
+  background-color: #eeeeee;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -930,9 +930,9 @@ img {
 /* Сетка */
 
 .grid {
+  margin: 0;
   padding: 0;
   padding-bottom: 43px;
-  margin: 0;
 }
 
 .grid .radio-wrapper {
@@ -953,8 +953,8 @@ img {
 /* Особенности */
 
 .advantages {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .advantages .checkbox-wrapper {
@@ -985,9 +985,9 @@ img {
 }
 
 .show-btn {
+  position: relative;
   margin: 0;
   margin-top: 45px;
-  position: relative;
   padding: 16px 90px;
   text-transform: uppercase;
 }
@@ -1005,10 +1005,10 @@ input[type="checkbox"]:checked+label,
 input[type="checkbox"]:not(:checked)+label,
 input[type="radio"]:checked+label,
 input[type="radio"]:not(:checked)+label {
-  display: inline-block;
-  vertical-align: middle;
   position: relative;
+  display: inline-block;
   padding-left: 35px;
+  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -1067,39 +1067,39 @@ input[type="radio"]:focus+label::before {
 
 .sorting {
   display: flex;
-  padding-top: 20px;
   justify-content: space-between;
+  padding-top: 20px;
   box-sizing: content-box;
 }
 
 .sorting h2 {
+  margin: 0;
+  padding-top: 3px;
+  padding-left: 40px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-top: 3px;
-  margin: 0;
-  padding-left: 40px;
 }
 
 .sorting-list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 300px;
   margin: 0;
   padding-left: 200px;
   list-style: none;
-  flex-wrap: wrap;
 }
 
 .sorting-list a {
   display: inline-block;
+  padding-left: 20px;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
-  vertical-align: middle;
-  padding-left: 20px;
 }
 
 .sorting-list a:hover {
@@ -1133,12 +1133,12 @@ input[type="radio"]:focus+label::before {
   content: "";
   width: 15px;
   height: 15px;
+  vertical-align: top;
   background-image: url(../img/decor/arrow-down-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.2;
   cursor: pointer;
-  vertical-align: top;
 }
 
 
@@ -1147,12 +1147,12 @@ input[type="radio"]:focus+label::before {
   content: "";
   width: 15px;
   height: 15px;
+  vertical-align: top;
   background-image: url(../img/decor/arrow-up-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.2;
   cursor: pointer;
-  vertical-align: top;
 }
 
 .arrow-wrapper .arrow-down:hover::before,
@@ -1174,10 +1174,10 @@ input[type="radio"]:focus+label::before {
 
 .card-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  list-style: none;
+  flex-wrap: wrap;
   margin: 0;
+  list-style: none;
 }
 
 .item-curent .card-hover-blog {
@@ -1196,11 +1196,11 @@ input[type="radio"]:focus+label::before {
 .card-list li::before {
   content: "";
   position: absolute;
-  background-image: url(../img/decor/browser-icon.svg);
-  background-repeat: no-repeat;
-  top: -39px;
   width: 100%;
   height: 40px;
+  top: -39px;
+  background-image: url(../img/decor/browser-icon.svg);
+  background-repeat: no-repeat;
   opacity: 0.12;
 }
 
@@ -1210,11 +1210,11 @@ input[type="radio"]:focus+label::before {
 
 .card-hover-blog {
   position: absolute;
-  top: 345px;
   width: 100%;
+  top: 345px;
+  padding: 0px 65px;
   opacity: 0;
   background-color: #eeeeee;
-  padding: 0px 65px;
 }
 
 li:hover .card-hover-blog {
@@ -1290,19 +1290,19 @@ li:hover .card-hover-blog {
 
 .pagination-list a {
   display: flex;
+  padding: 15px 21px;
   font-weight: 500;
   background-color: #eeeeee;
   color: #000000;
   text-transform: uppercase;
-  padding: 15px 21px;
   line-height: 18px;
   border-radius: 3px;
 }
 
 .pagination-list .item-curent {
+  padding: 13px 18px;
   background-color: #ffffff;
   border: 2px solid #dbdbdb;
-  padding: 13px 18px;
 }
 
 .pagination-list a:hover {
