@@ -94,7 +94,7 @@ img {
 .header-logo {
   width: 160px;
   height: 55px;
-  padding-top: 25px;
+  padding-top: 24px;
 }
 
 .nav-container {
@@ -179,7 +179,7 @@ img {
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 8px;
   background-color: #eeeeee;
 }
 
@@ -188,13 +188,14 @@ img {
   padding-bottom: 80px;
   background-image: url(../img/decor/slide1.png);
   background-repeat: no-repeat;
-  background-position: 452px 15px;
+  background-position: 452px 20px;
 }
 
 
 .slider h2 {
   margin: 0;
-  padding-bottom: 29px;
+  padding-top: 5px;
+  padding-bottom: 27px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -202,7 +203,7 @@ img {
 
 .slider p {
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
   color: #283136;
 }
 
@@ -224,7 +225,7 @@ img {
   padding-bottom: 80px;
   background-image: url(../img/decor/slide2.png);
   background-repeat: no-repeat;
-  background-position: 515px top;
+  background-position: 516px 2px;
 }
 
 .slider-container-second {
@@ -291,7 +292,7 @@ img {
   flex-wrap: wrap;
   width: 1160px;
   margin: auto;
-  margin-top: 79px;
+  margin-top: 80px;
   box-sizing: border-box;
 }
 
@@ -527,6 +528,10 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.footer-map iframe {
+  width: 100%;
 }
 
 
@@ -827,7 +832,7 @@ img {
 .filter-cost::after {
   position: absolute;
   content: "";
-  width: 145px;
+  width: 150px;
   height: 2px;
   background-color: #00ca74;
   top: 50%;
@@ -1273,7 +1278,7 @@ li:hover .card-hover-blog {
 /* Пагинация */
 
 .pagination {
-  margin-bottom: -20px;
+  margin-bottom: -23px;
   box-sizing: content-box;
 }
 
