@@ -168,10 +168,20 @@ img {
 
 /* Слайдер */
 
-/* slider 2/3 off */
+/* slider off */
+.slider-wrapper-first,
 .slider-wrapper-second,
 .slider-wrapper-third {
   display: none;
+}
+
+.item-slide {
+  display: block;
+}
+
+.slide-visible-second,
+.slide-visible-third {
+  display: block;
 }
 
 .slider {
@@ -656,6 +666,22 @@ img {
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
+.feedback-show {
+  display: block;
+  animation: bounce 0.7s ease-out;
+  -webkit-animation: bounce 0.7s ease-out;
+}
+
+.feedback-error {
+  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+}
+
+.close-animation {
+  animation: bounce 0.7s;
+  -webkit-animation: bounce 0.7s;
+}
+
 .feedback h2 {
   font-weight: 500;
   margin: 0;
@@ -664,6 +690,7 @@ img {
   font-size: 45px;
   line-height: 45px;
 }
+
 
 .feedback-close {
   position: absolute;
@@ -679,6 +706,8 @@ img {
   opacity: 0.3;
   cursor: pointer;
 }
+
+
 
 .feedback-close:hover {
   opacity: 1;
@@ -767,6 +796,80 @@ img {
   padding: 17px 84px;
   vertical-align: middle;
 }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-1000px);
+    -webkit-transform: translateY(-1000px);
+    -moz-transform: translateY(-1000px);
+    -ms-transform: translateY(-1000px);
+    -o-transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
+    -moz-transform: translateY(150px);
+    -ms-transform: translateY(150px);
+    -o-transform: translateY(150px);
+    opacity: 0.5;
+  }
+
+  80% {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -o-transform: translateX(15px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-15px);
+    -webkit-transform: translateX(-15px);
+    -moz-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    -o-transform: translateX(-15px);
+  }
+}
+
 
 /* Страница Каталога */
 
