@@ -4,6 +4,7 @@ var popup = document.querySelector(".feedback");
 var popupClose = document.querySelector(".feedback-close");
 var login = popup.querySelector("[name=login]");
 var email = popup.querySelector("[name=email]");
+var comment = popup.querySelector("[name=text]")
 var form = popup.querySelector(".feedback-form");
 
 var isStorageSupport = true;
@@ -18,6 +19,7 @@ try {
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("feedback-show");
+  popup.classList.remove("close-animation");
 
   if (storage) {
     login.value = storage;
@@ -35,7 +37,7 @@ popupClose.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!login.value || !email.value) {
+  if (!login.value || !email.value || !comment.value) {
     evt.preventDefault();
     popup.classList.remove("feedback-error");
     popup.offsetWidth = popup.offsetWidth;
