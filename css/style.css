@@ -1565,7 +1565,7 @@ input[type="radio"]:focus+label::before {
 .card-hover-blog {
   position: absolute;
   width: 100%;
-  top: 345px;
+  bottom: 1px;
   padding: 0px 65px;
   opacity: 0;
   background-color: #eeeeee;
