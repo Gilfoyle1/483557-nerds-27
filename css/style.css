@@ -507,6 +507,10 @@ img {
   color: #283136;
 }
 
+.statistic-table sup {
+  font-size: 28px;
+}
+
 
 /* Блок клиетов */
 
@@ -1518,7 +1522,7 @@ input[type="radio"]:focus+label::before {
 /* Каталог товаров */
 .card {
   width: 800px;
-  padding-top: 10px;
+  padding-top: 85px;
 }
 
 .card-list {
@@ -1540,7 +1544,7 @@ input[type="radio"]:focus+label::before {
 
 .card-list li {
   position: relative;
-  margin-top: 75px;
+  margin-bottom: 73px;
 }
 
 .card-list .item-curent::before {
@@ -1565,6 +1569,8 @@ input[type="radio"]:focus+label::before {
 .card-hover-blog {
   position: absolute;
   width: 100%;
+  max-height: 576px;
+  overflow-y: auto;
   bottom: 1px;
   padding: 0px 65px;
   opacity: 0;
@@ -1627,7 +1633,8 @@ li:hover .card-hover-blog {
 /* Пагинация */
 
 .pagination {
-  margin-bottom: -23px;
+  margin-top: -71px;
+  margin-bottom: -21px;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
